@@ -2,7 +2,7 @@ DWEC - Tarea 4
 
 Enunciado:
 ==========
-**Continuamos con Merca Mona. **
+**Continuamos con Merca Mona.**
 
 En la web se van a incluir una serie de formularios que nos van a servir para
 realizar el control de productos y usuarios de este supermercado tan querido por
