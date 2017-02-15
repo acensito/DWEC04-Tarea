@@ -2,10 +2,7 @@ DWEC - Tarea 4
 
 Enunciado:
 ==========
-
-**Continuamos con Merca Mona. **
-
-![Logotipo de MercaMona](media/706fe71432c71b19668fd89701306251.png)
+**Continuamos con Merca Mona. **
 
 En la web se van a incluir una serie de formularios que nos van a servir para
 realizar el control de productos y usuarios de este supermercado tan querido por
@@ -18,14 +15,14 @@ conseguir que la petición al formulario sea correcta.
 Desde un índice van a colgar de la aplicación web va a tener las siguientes
 páginas:
 
-1.   Sección de creación de usuario.
+1.   Sección de creación de usuario.
 
-2.   Sección de ingreso de dinero.
+2.   Sección de ingreso de dinero.
 
-Cada una de las secciones tendrá una sola página y un archivo JavaScript.  Las
+Cada una de las secciones tendrá una sola página y un archivo JavaScript.  Las
 veremos a continuación en detalle
 
- 
+ 
 
 **1. Sección de login de usuario**. (5 puntos)
 
@@ -34,13 +31,13 @@ formularios. Esta sección debe disponer de los siguientes campos:
 
 -   **Nombre**. Debe verificarse que el nombre solo dispone de letras y
     caracteres. Debe añadirse un punto al final del texto de forma automática. Y
-    cuando se vaya a escribir en el campo se debe borrar.  Es **obligatorio** y
+    cuando se vaya a escribir en el campo se debe borrar.  Es **obligatorio** y
     no se puede dejar en blanco.
 
 -   **Primer Apellido**: Debe verificarse que el nombre solo dispone de
     caracteres alfabéticos y el espacio. No puede tener más de 60 caractéres y
     no menos de 2. Cuando se superen o queden menos deben cambiarse los colores
-    del texto a rojo.  Es obligatorio y no se puede dejar en blanco.
+    del texto a rojo.  Es obligatorio y no se puede dejar en blanco.
 
 -   **Segundo Apellido:** Debe verificarse que el nombre solo dispone de
     caracteres alfabéticos y el espacio. Cuando se cambie de campo el primer
@@ -73,7 +70,7 @@ formularios. Esta sección debe disponer de los siguientes campos:
 -   Botón **Enviar**. Al pulsar este botón muestra los datos pedidos o lo
     errores cometidos. Los datos se van a mostrar en una capa **div** tal y como
     se explica al final de este apartado (abajo del todo). Si se ha producido un
-    envío correcto debemos poner el verde el fondo de todas los campos. 
+    envío correcto debemos poner el verde el fondo de todas los campos. 
 
 **2. Sección de creación de productos. (4 puntos)**
 
@@ -93,7 +90,7 @@ que se hará con *localStorage*.
     separador de los decimales puede ser un punto o una coma.
 
 -   Si está en un pack con varios o es un producto **individual**. Realizarlo
-    con *Input Type Range. *
+    con *Input Type Range. *
 
 -   Si es **ecológico** o no con el elemento del formulario más adecuado.
 
@@ -113,7 +110,7 @@ que se hará con *localStorage*.
 
 -   Se prohíbe el uso de eventos BOM (tipo onclick). Se utilizarán solo los
     sistemas aprobados por w3c (Modelo de registro avanzado de eventos según
-    W3C). O sea, con *AddEventListener*. 
+    W3C). O sea, con *AddEventListener*. 
 
 -   Se prohíbe el uso de **jQuery** para la realización de la tarea.
 
@@ -123,23 +120,23 @@ que se hará con *localStorage*.
 -   Va a hacerte falta el uso event.preventDefault() para evitar que se envíe la
     página y se pueda utilizar lo siguiente.
 
-| \<div id="resultado\>    Al actualizar este contenido se borrra. \</div\> \<script\> |
-|--------------------------------------------------------------------------------------|
+```html 
+<div id="resultado">Al actualizar este contenido se borrra.</div>
 
-
->   document.getElementById("resultado").innerHTML="Aquí pones el código que
->   quieres que aparezca en la capa resultado";
-
-\</script\>
+<script>
+document.getElementById("resultado").innerHTML="Aquí pones el código que
+quieres que aparezca en la capa resultado";
+</script>
+```
 
 Recursos necesarios:
 ====================
 
 -   Ordenador personal.
 
--   Editor web para teclear el código de la aplicación.
+-   Editor web para teclear el código de la aplicación.
 
--   Navegador web para probar el funcionamiento de la aplicación.
+-   Navegador web para probar el funcionamiento de la aplicación.
 
 Criterios de corrección y puntuación:
 =====================================
@@ -148,17 +145,17 @@ Los puntos que tiene esta tarea están asignados de la siguiente forma:
 
 -   Apartado12: **(5 puntos en total)**
 
-    -   Nombre y Apellidos:  **1,5 puntos**
+    -   Nombre y Apellidos:  **1,5 puntos**
 
-    -   Contraseña: **2 puntos.**
+    -   Contraseña: **2 puntos.**
 
     -   Resto de funciones del formulario: **1,5 punto.**
 
--   Apartado 2: **4 puntos**.
+-   Apartado 2: **4 puntos**.
 
 -   Claridad y comentarios y presentación del código: **1 puntos.**
 
-Total: 10 puntos máximo. 
+Total: 10 puntos máximo. 
 
 Consejos y recomendaciones:
 ===========================
@@ -167,7 +164,3 @@ Se recomienda realizar una función para cada una de las validaciones de tal
 forma que se pueda llamar a cada una de forma independiente. Las funciones
 deberían devolver true si la validación ha sido correcta o false (y los mensajes
 de error solicitados) si la validación ha sido incorrecta.
-
-Corrección:
-===========
-
