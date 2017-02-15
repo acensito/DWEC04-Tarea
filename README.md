@@ -122,10 +122,10 @@ que se hará con *localStorage*.
 
 ```html 
 <div id="resultado">Al actualizar este contenido se borrra.</div>
-
+```
+```javascript
 <script>
-document.getElementById("resultado").innerHTML="Aquí pones el código que
-quieres que aparezca en la capa resultado";
+document.getElementById("resultado").innerHTML="Aquí pones el código que quieres que aparezca en la capa resultado";
 </script>
 ```
 
