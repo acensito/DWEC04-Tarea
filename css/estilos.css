@@ -1,0 +1,162 @@
+/**
+ * Created on : 01-mar-2016
+ * Modificado : 14-feb-2017 
+ * Author     : Felipe Rodríguez Gutiérrez
+ */
+
+/* Generalistas de la página */
+html {
+    -webkit-font-smoothing: antialiased !important;
+    background-color: #e6e9e9;
+}
+
+body {
+    background-color: #ffffff;
+    border-radius: 5px;
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin: 2em auto;
+    max-width: 800px;
+    padding: 2em 2em 4em;
+}
+
+nav {
+    text-align: center;
+}
+
+footer {
+    font-size: 0.8em;
+    margin-bottom: 0.2px;
+    margin-top: 60px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Para los botones de la pagina de inicio*/
+.menu {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu a {
+    color: #000000;
+    background-color: forestgreen;
+    width: 350px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid transparent;
+    border-radius: 3px;
+}
+
+/* link visitado, seleccionado, mouseover */
+a:link, a:visited, a:active, a:hover {
+    color: #000000;
+    text-decoration: none;
+}
+
+/* Para los mensajes */
+.error, .perfecto {
+    margin-right: 3px;
+    margin-left: 3px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.error {
+    color: indianred;
+    background-color: #ffcccc;
+    border: 1px solid indianred;
+}
+
+.perfecto {
+    color: darkgreen;
+    background-color: lightgreen;
+    border: 1px solid darkgreen;
+}
+
+/* Para los texto del campo */
+.txtRojo {
+    color: indianred;
+}
+
+.txtNormal {
+    color: #000000;
+}
+
+/* Colores de los campos*/
+.correcto {
+    background-color: lightgreen;
+}
+
+.incorrecto {
+    background-color: #ffcccc;
+}
+
+/* Disposicion del contenedor del formulario */
+#contenedor {
+    text-align: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Disposicion del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 350px;
+}
+
+/* Disposicion de de las etiquetas del formulario*/
+form label {
+    text-align: justify;
+    padding: 0 10px;
+}
+
+/* Formato de los imputs del formulario */
+input, select {
+    margin: 5px 5px;
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: auto;
+    transition: border .5s;
+}
+
+input[type="range"] {
+    width: auto;
+    flex-grow: 2;
+    background-color: #ffffff;
+}
+
+#contenido, #contenido2 {
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Botones de los formularios */
+.reset {
+    background-color: #3498DB;
+}
+
+.enviar {
+    background-color: forestgreen;
+}
+

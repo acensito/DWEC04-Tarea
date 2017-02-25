@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!--
+2017 Felipe Rodríguez Gutiérrez
+
+CODIGO CREADO BAJO LICENCIA CREATIVE COMMONS
+
+Reconocimiento - NoComercial - CompartirIgual (by-nc-sa): 
+
+No se permite un uso comercial de la obra original ni de las posibles obras 
+derivadas, la distribución de las cuales se debe hacer con una licencia igual
+a la que regula la obra original.
+-->
+
+<!--
+Módulo: Desarrollo Web Entorno Cliente
+Tema 04: Gestion de eventos y formularios en JavaScript 
+Tarea 4: Merca Mona (vol. 2)
+Alumno: Felipe Rodríguez Gutiérrez
+-->
+<html>
+    <head>
+        <title>DWEC04 - Tarea - Ejercicio 2</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" href="css/estilos.css" rel="stylesheet" />
+        <script src="js/2.js"></script>
+    </head>
+    <body>
+        <nav><img src="img/logo.png" alt="Merca Mona"></nav>
+        <section>
+            <h1>Ejercicio 2</h1>
+            
+            <div id="resultado"></div>
+            
+            <form>
+                <label>Producto:</label>
+                <input type="text" id="producto" value="" placeholder="Producto" required pattern="^[a-zA-Z0-9áéíóóñÁÉÍÓÚÑ\s\.,;:]+$" />
+               
+                <label>Peso:</label>
+                <input type="text" id="peso" value="" placeholder="Peso" required pattern="^[0-9]+([\.,][0-9]{1,})?$" />
+                
+                <label>Presentacion:</label>
+                <div id="contenido">
+                    <label>Individual</label><input type="range" id="presentacion" min="0" max="1" value="0" /><label>Pack</label>
+                </div>
+                
+                <div id="contenido2">
+                    <label>Ecológico:</label>
+                    <input type="checkbox" id="ecologico" value="false"/>
+                </div>
+                
+                <label>Sección:</label>
+                <select id="seccion"> 
+                    <option value="carniceria">Carnicería</option>
+                    <option value="fruteria">Frutería</option>
+                    <option value="ultramarinos">Ultramarinos</option>
+                    <option value="bebidas">Bebidas</option>
+                    <option value="panaderia">Panadería</option>
+                    <option value="drogueria">Droguería</option>
+                </select>
+
+                <input type="reset" id="reset" class="reset" value="Reiniciar">
+                <input type="button" id="enviar" class="enviar" value="Enviar">
+            </form>
+        </section>
+        <footer>DWEC - Tarea 4 - Felipe Rodríguez Gutiérrez - 2016/2017</footer>
+    </body>
+</html>
